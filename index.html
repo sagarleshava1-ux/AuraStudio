@@ -13,16 +13,16 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#121110;--panel:#1C1A18;--line:#2A2724;--ink:#F3EDE4;--muted:#BDB5A9;--faint:#9C9489;--accent:#E8A15A}
+:root{--bg:#121110;--panel:#1C1A18;--line:#2A2724;--ink:#F3EDE4;--muted:#BDB5A9;--faint:#9C9489;--accent:#9FD8C4}
 *{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:calc(76px + env(safe-area-inset-top,0px))}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:Manrope,"Helvetica Neue",Helvetica,sans-serif;-webkit-font-smoothing:antialiased}
-.wrap{max-width:520px;margin:0 auto;min-height:100vh;display:flex;flex-direction:column;padding-bottom:env(safe-area-inset-bottom,0px)}
+.wrap{max-width:520px;margin:0 auto;min-height:100vh;display:flex;flex-direction:column;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 .serif{font-family:"Instrument Serif",Georgia,serif;font-weight:400}
 .acc{color:var(--accent);font-style:italic}
 a{color:var(--ink)}
 a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
-header{position:sticky;top:0;z-index:10;display:flex;justify-content:space-between;align-items:center;padding:calc(16px + env(safe-area-inset-top,0px)) 20px 16px;background:rgba(18,17,16,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header{display:flex;justify-content:space-between;align-items:center;padding:20px;border-bottom:1px solid var(--line)}
 .logo{display:flex;align-items:center;gap:10px;text-decoration:none}
 .mark{width:28px;height:28px;border-radius:50%;border:1.5px solid var(--accent);display:flex;align-items:center;justify-content:center}
 .mark span{width:10px;height:10px;border-radius:50%;background:var(--accent)}
@@ -32,7 +32,7 @@ header{position:sticky;top:0;z-index:10;display:flex;justify-content:space-betwe
 .pill.fill{background:var(--accent);color:var(--bg)}
 .pill.ghost{border:1px solid #4A453F;color:var(--ink)}
 .hero{padding:40px 20px 32px;display:flex;flex-direction:column;gap:20px}
-.kicker{font-size:13px;font-weight:600;color:var(--accent)}
+.kicker{font-size:12px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--accent)}
 h1{margin:0;font-size:clamp(46px,13vw,60px);line-height:1.02}
 .lead{margin:0;font-size:16px;line-height:1.55;color:var(--muted)}
 .row{display:flex;gap:12px}.row .pill{flex:1}
@@ -48,7 +48,7 @@ h2{margin:0;font-size:34px;line-height:1.08}
 .card[hidden]{display:none}
 .frame{position:relative;aspect-ratio:9/16;border-radius:18px;overflow:hidden;background:var(--panel)}
 .frame video{width:100%;height:100%;object-fit:cover;display:block}
-.tag{position:absolute;left:10px;top:10px;font-size:11px;font-weight:700;padding:5px 9px;border-radius:999px;background:rgba(18,17,16,.72);pointer-events:none}
+.tag{position:absolute;left:10px;top:10px;font-size:11px;font-weight:700;letter-spacing:.6px;text-transform:uppercase;padding:5px 9px;border-radius:999px;background:rgba(18,17,16,.72);pointer-events:none}
 .t{font-size:14px;font-weight:600}.s{font-size:12px;color:var(--faint);margin-top:-4px}
 .process{margin:0 20px;padding:28px 22px;border-radius:24px;background:var(--panel);border:1px solid var(--line);display:flex;flex-direction:column;gap:22px}
 .process h2{font-size:32px}
@@ -67,21 +67,20 @@ footer p{margin:0;font-size:12px;line-height:1.5;color:var(--faint)}
 <body>
 <div class="wrap">
 
+<main id="top">
+<section class="hero">
+<div class="kicker">AI UGC videos · Product visuals</div>
+<h1 class="serif">Scroll-stopping video, <span class="acc">made with AI.</span></h1>
+<p class="lead">Creator-style ads and product visuals for small brands. Studio quality, without the studio price or wait.</p>
+<div class="row"><a class="pill fill" href="#work">See the work</a><a class="pill ghost" href="#contact">Free concept</a></div>
+</section>
 <header>
 <a class="logo" href="#top" aria-label="Aura Studio home"><span class="mark"><span></span></span><b>Aura Studio</b></a>
 <a class="pill light" href="#contact">Work with us</a>
 </header>
 
-<main id="top">
-<section class="hero">
-<div class="kicker">AI UGC videos &amp; product visuals</div>
-<h1 class="serif">Scroll-stopping video, <span class="acc">made with AI.</span></h1>
-<p class="lead">Creator-style ads and product visuals for small brands. Studio quality, without the studio price or wait.</p>
-<div class="row"><a class="pill fill" href="#work">See the work</a><a class="pill ghost" href="#contact">Free concept</a></div>
-</section>
-
 <section id="work">
-<div class="head"><h2 class="serif">The reel</h2><div class="hint">Tap to play, sound on</div></div>
+<div class="head"><h2 class="serif">The reel</h2><div class="hint">Tap to play · sound on</div></div>
 <div class="chips" role="group" aria-label="Filter videos">
 <button type="button" data-f="all" aria-pressed="true">All</button>
 <button type="button" data-f="ugc" aria-pressed="false">UGC ads</button>
@@ -91,19 +90,19 @@ footer p{margin:0;font-size:12px;line-height:1.5;color:var(--faint)}
 <div class="grid">
 <article class="card" data-c="ugc">
 <div class="frame"><video src="videos/foundation.mp4" poster="videos/foundation-poster.jpg" controls playsinline loop preload="none" aria-label="Foundation vanity mirror review"></video><span class="tag">UGC ad</span></div>
-<div class="t">Foundation, vanity mirror review</div><div class="s">AI UGC ad, concept</div>
+<div class="t">Foundation — vanity mirror review</div><div class="s">AI UGC ad · Concept</div>
 </article>
 <article class="card" data-c="product">
 <div class="frame"><video src="videos/bridal-ring.mp4" poster="videos/bridal-ring-poster.jpg" controls playsinline loop preload="none" aria-label="Bridal ring first look"></video><span class="tag">Product</span></div>
-<div class="t">Bridal ring, first look</div><div class="s">Product showcase</div>
+<div class="t">Bridal ring — first look</div><div class="s">Product showcase</div>
 </article>
 <article class="card" data-c="ugc">
 <div class="frame"><video src="videos/glow-stick.mp4" poster="videos/glow-stick-poster.jpg" controls playsinline loop preload="none" aria-label="Glow stick beauty selfie"></video><span class="tag">UGC ad</span></div>
-<div class="t">Glow stick, beauty selfie</div><div class="s">AI UGC ad, concept</div>
+<div class="t">Glow stick — beauty selfie</div><div class="s">AI UGC ad · Concept</div>
 </article>
 <article class="card" data-c="influencer">
 <div class="frame"><video src="videos/ai-influencer.mp4" poster="videos/ai-influencer-poster.jpg" controls playsinline loop preload="none" aria-label="AI influencer talking to camera"></video><span class="tag">AI influencer</span></div>
-<div class="t">AI influencer, talking to camera</div><div class="s">AI influencer reel</div>
+<div class="t">AI influencer — talking to camera</div><div class="s">AI influencer · Reel</div>
 </article>
 </div>
 </section>
