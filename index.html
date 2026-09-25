@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Aura Studio — AI UGC videos &amp; product visuals</title>
+<meta name="description" content="Creator-style AI video ads and product visuals for small brands. Studio quality, without the studio price or wait.">
+<meta property="og:title" content="Aura Studio">
+<meta property="og:description" content="Scroll-stopping video, made with AI.">
+<meta property="og:image" content="videos/ai-influencer-poster.jpg">
+<meta name="theme-color" content="#121110">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#121110;--panel:#1C1A18;--line:#2A2724;--ink:#F3EDE4;--muted:#BDB5A9;--faint:#9C9489;--accent:#E8A15A}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(76px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Manrope,"Helvetica Neue",Helvetica,sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:520px;margin:0 auto;min-height:100vh;display:flex;flex-direction:column;padding-bottom:env(safe-area-inset-bottom,0px)}
+.serif{font-family:"Instrument Serif",Georgia,serif;font-weight:400}
+.acc{color:var(--accent);font-style:italic}
+a{color:var(--ink)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+header{position:sticky;top:0;z-index:10;display:flex;justify-content:space-between;align-items:center;padding:calc(16px + env(safe-area-inset-top,0px)) 20px 16px;background:rgba(18,17,16,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.mark{width:28px;height:28px;border-radius:50%;border:1.5px solid var(--accent);display:flex;align-items:center;justify-content:center}
+.mark span{width:10px;height:10px;border-radius:50%;background:var(--accent)}
+.logo b{font-family:"Instrument Serif",Georgia,serif;font-weight:400;font-size:24px}
+.pill{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 20px;border-radius:999px;font-weight:600;font-size:15px;text-decoration:none}
+.pill.light{background:var(--ink);color:var(--bg);min-height:44px;font-size:14px;padding:0 16px}
+.pill.fill{background:var(--accent);color:var(--bg)}
+.pill.ghost{border:1px solid #4A453F;color:var(--ink)}
+.hero{padding:40px 20px 32px;display:flex;flex-direction:column;gap:20px}
+.kicker{font-size:13px;font-weight:600;color:var(--accent)}
+h1{margin:0;font-size:clamp(46px,13vw,60px);line-height:1.02}
+.lead{margin:0;font-size:16px;line-height:1.55;color:var(--muted)}
+.row{display:flex;gap:12px}.row .pill{flex:1}
+#work{padding:8px 20px 40px;display:flex;flex-direction:column;gap:18px}
+.head{display:flex;justify-content:space-between;align-items:baseline}
+h2{margin:0;font-size:34px;line-height:1.08}
+.hint{font-size:13px;color:var(--faint)}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chips button{font:600 13px Manrope,sans-serif;padding:10px 16px;min-height:44px;border-radius:999px;border:1px solid #3A3631;background:transparent;color:var(--ink);cursor:pointer}
+.chips button[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.card{display:flex;flex-direction:column;gap:8px}
+.card[hidden]{display:none}
+.frame{position:relative;aspect-ratio:9/16;border-radius:18px;overflow:hidden;background:var(--panel)}
+.frame video{width:100%;height:100%;object-fit:cover;display:block}
+.tag{position:absolute;left:10px;top:10px;font-size:11px;font-weight:700;padding:5px 9px;border-radius:999px;background:rgba(18,17,16,.72);pointer-events:none}
+.t{font-size:14px;font-weight:600}.s{font-size:12px;color:var(--faint);margin-top:-4px}
+.process{margin:0 20px;padding:28px 22px;border-radius:24px;background:var(--panel);border:1px solid var(--line);display:flex;flex-direction:column;gap:22px}
+.process h2{font-size:32px}
+.step{display:flex;gap:14px}
+.step .n{font-family:"Instrument Serif",Georgia,serif;font-size:28px;color:var(--accent);width:28px;flex:none}
+.step b{display:block;font-size:16px;margin-bottom:4px}
+.step p{margin:0;font-size:14px;line-height:1.5;color:var(--muted)}
+#contact{padding:48px 20px 32px;display:flex;flex-direction:column;gap:16px}
+#contact h2{font-size:44px;line-height:1.02}
+footer{margin-top:auto;padding:24px 20px 32px;border-top:1px solid var(--line);display:flex;flex-direction:column;gap:8px}
+footer .serif{font-size:20px}
+footer p{margin:0;font-size:12px;line-height:1.5;color:var(--faint)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+<a class="logo" href="#top" aria-label="Aura Studio home"><span class="mark"><span></span></span><b>Aura Studio</b></a>
+<a class="pill light" href="#contact">Work with us</a>
+</header>
+
+<main id="top">
+<section class="hero">
+<div class="kicker">AI UGC videos &amp; product visuals</div>
+<h1 class="serif">Scroll-stopping video, <span class="acc">made with AI.</span></h1>
+<p class="lead">Creator-style ads and product visuals for small brands. Studio quality, without the studio price or wait.</p>
+<div class="row"><a class="pill fill" href="#work">See the work</a><a class="pill ghost" href="#contact">Free concept</a></div>
+</section>
+
+<section id="work">
+<div class="head"><h2 class="serif">The reel</h2><div class="hint">Tap to play, sound on</div></div>
+<div class="chips" role="group" aria-label="Filter videos">
+<button type="button" data-f="all" aria-pressed="true">All</button>
+<button type="button" data-f="ugc" aria-pressed="false">UGC ads</button>
+<button type="button" data-f="product" aria-pressed="false">Product</button>
+<button type="button" data-f="influencer" aria-pressed="false">AI influencer</button>
+</div>
+<div class="grid">
+<article class="card" data-c="ugc">
+<div class="frame"><video src="videos/foundation.mp4" poster="videos/foundation-poster.jpg" controls playsinline loop preload="none" aria-label="Foundation vanity mirror review"></video><span class="tag">UGC ad</span></div>
+<div class="t">Foundation, vanity mirror review</div><div class="s">AI UGC ad, concept</div>
+</article>
+<article class="card" data-c="product">
+<div class="frame"><video src="videos/bridal-ring.mp4" poster="videos/bridal-ring-poster.jpg" controls playsinline loop preload="none" aria-label="Bridal ring first look"></video><span class="tag">Product</span></div>
+<div class="t">Bridal ring, first look</div><div class="s">Product showcase</div>
+</article>
+<article class="card" data-c="ugc">
+<div class="frame"><video src="videos/glow-stick.mp4" poster="videos/glow-stick-poster.jpg" controls playsinline loop preload="none" aria-label="Glow stick beauty selfie"></video><span class="tag">UGC ad</span></div>
+<div class="t">Glow stick, beauty selfie</div><div class="s">AI UGC ad, concept</div>
+</article>
+<article class="card" data-c="influencer">
+<div class="frame"><video src="videos/ai-influencer.mp4" poster="videos/ai-influencer-poster.jpg" controls playsinline loop preload="none" aria-label="AI influencer talking to camera"></video><span class="tag">AI influencer</span></div>
+<div class="t">AI influencer, talking to camera</div><div class="s">AI influencer reel</div>
+</article>
+</div>
+</section>
+
+<section class="process" id="process">
+<h2 class="serif">From product to post <span class="acc">in days.</span></h2>
+<div class="step"><div class="n">1</div><div><b>Send your product</b><p>A link or a few photos is enough.</p></div></div>
+<div class="step"><div class="n">2</div><div><b>Pick a concept</b><p>Two ideas, you choose the one that fits your brand.</p></div></div>
+<div class="step"><div class="n">3</div><div><b>Approve and post</b><p>Nothing goes live until you say yes.</p></div></div>
+</section>
+
+<section id="contact">
+<h2 class="serif">Want one for <span class="acc">your brand?</span></h2>
+<p class="lead">Tell us your product. We'll send two concept ideas, no strings.</p>
+<a class="pill fill" href="https://instagram.com/YOUR_HANDLE">DM us on Instagram</a>
+<a class="pill ghost" href="mailto:YOUR_EMAIL">Email us</a>
+</section>
+</main>
+
+<footer>
+<div class="serif">Aura Studio</div>
+<p>All videos are AI-generated. Brand concept ads are shown with the brand's permission.</p>
+</footer>
+</div>
+<script>
+(function(){
+  var chips=document.querySelectorAll('.chips button'),cards=document.querySelectorAll('.card');
+  chips.forEach(function(b){b.addEventListener('click',function(){
+    var f=b.getAttribute('data-f');
+    chips.forEach(function(c){c.setAttribute('aria-pressed',c===b?'true':'false')});
+    cards.forEach(function(c){c.hidden=!(f==='all'||c.getAttribute('data-c')===f)});
+  })});
+  // only one video plays at a time
+  document.querySelectorAll('video').forEach(function(v){v.addEventListener('play',function(){
+    document.querySelectorAll('video').forEach(function(o){if(o!==v)o.pause()});
+  })});
+})();
+</script>
+</body>
+</html>
